@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ajayj.myapplication.RloginActivity">
+
+    <TextView
+        android:id="@+id/rlogintext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/red"
+        android:gravity="center"
+        android:background="@color/grey"
+        android:text="LOGIN to Proceed"
+        />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rusertext2"
+        android:layout_below="@+id/rlogintext">
+
+        <EditText
+            android:id="@+id/rusertext20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Name"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:id="@+id/rpasswordtext2"
+        android:layout_below="@+id/rusertext2">
+        <EditText
+            android:id="@+id/rpasswordtext20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/rrmndchecktext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rpasswordtext2"
+        android:text="Remember Me"
+        />
+    <TextView
+        android:id="@+id/rforgotpwdtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:text="@string/forgotpassword"
+        android:layout_below="@+id/rpasswordtext2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+    <TextView
+        android:id="@+id/rtextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="New user...? click here -->"
+        android:layout_marginBottom="61dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        />
+    <TextView
+        android:id="@+id/rsignuptext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/signup"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/rtextView2"
+        android:layout_below="@+id/rtextView2"
+        android:layout_alignRight="@+id/rforgotpwdtext"
+         />
+    <Button
+        android:id="@+id/rloginbtn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

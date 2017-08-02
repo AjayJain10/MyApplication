@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ajayj.myapplication.RmainActivity">
+
+
+
+    <TextView
+        android:id="@+id/rtext2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/red"
+        android:gravity="center"
+        android:background="@color/grey"
+        android:text="SIGN UP please" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rtext2"
+        android:id="@+id/rfirstnametext"
+        >
+
+        <EditText
+            android:id="@+id/rfirstnametext1"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:inputType="text"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlastnametext"
+        android:layout_toRightOf="@+id/rfirstnametext"
+        android:layout_below="@+id/rtext2">
+
+
+        <EditText
+            android:id="@+id/rlastnametext1"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:inputType="text" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rusertext"
+        android:layout_below="@+id/rfirstnametext"
+        >
+
+    </android.support.design.widget.TextInputLayout>
+        <EditText
+            android:id="@+id/rusertext3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Name"
+            android:inputType="text"
+            android:layout_below="@+id/rusertext"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rcodetext"
+        android:layout_below="@+id/rusertext3">
+
+    <EditText
+        android:id="@+id/rcodetext1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="+91"
+        android:layout_below="@+id/rusertext30"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rmobiletext"
+        android:layout_below="@+id/rusertext3"
+        android:layout_toRightOf="@+id/rcodetext"
+        android:layout_toEndOf="@+id/rcodetext">
+
+
+    <EditText
+        android:id="@+id/rmobiletext1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Mobile Number"
+        android:maxLength="10"
+        android:layout_below="@+id/rusertext3"
+        android:layout_toRightOf="@+id/rcodetext"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/remailtext"
+        android:layout_below="@+id/rcodetext">
+
+        <EditText
+            android:id="@+id/remailtext1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email address"
+            android:inputType="textEmailAddress"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <TextView
+        android:id="@+id/rdobtext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="DOB:"
+        android:layout_below="@+id/remailtext" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rdatetext"
+        android:layout_below="@+id/remailtext"
+        android:layout_marginStart="50dp">
+
+        <EditText
+            android:id="@+id/rdatetext1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DD/MM/YYYY"
+            android:inputType="date"
+            android:maxLength="10" />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:id="@+id/rradiogrp"
+        android:layout_below="@id/rdatetext">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:textSize="20sp"
+            android:text="Gender:"
+            android:id="@+id/rgenderview"
+            android:layout_below="@+id/rdatetext"/>
+
+
+        <RadioButton
+            android:id="@+id/rmalerdbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="Male"/>
+
+        <RadioButton
+            android:id="@+id/rfemalerdbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="Female" />
+
+    </RadioGroup>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/raddresstext"
+        android:layout_below="@id/rradiogrp">
+
+        <EditText
+            android:id="@+id/raddresstext1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:inputType="textMultiLine" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/rquestionspinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/raddresstext">
+    </Spinner>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rsecurityanstext"
+        android:layout_below="@+id/rquestionspinner1">
+        <EditText
+            android:id="@+id/rsecurityanstext1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Security Answer"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rpasswordtext3"
+        android:layout_below="@+id/rsecurityanstext"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/rpasswordtext30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rcnfrmpasswordtext4"
+        android:layout_below="@+id/rpasswordtext3"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/rcnfrmpasswordtext40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="confirm Password"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/rchecktext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rcnfrmpasswordtext4"
+        android:text="Accept the terms and conditions"
+        />
+
+    <Button
+        android:id="@+id/rregistertext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rchecktext"
+        android:gravity="center"
+        android:text="Register"/>
+
+    <TextView
+        android:id="@+id/rcheckaccept"
+        android:layout_below="@+id/rregistertext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have a account ?"
+        />
+
+    <TextView
+        android:id="@+id/rlogintext2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/rcheckaccept"
+        android:textSize="35sp"
+        android:text="@string/login"/>
+
+    <TextView
+        android:id="@+id/rcopyrights"
+        android:layout_below="@+id/rlogintext2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10sp"
+        android:text="Copyrights Reserved @ MONSTER_AJAY reg."/>
+
+
+</RelativeLayout>
+</ScrollView>

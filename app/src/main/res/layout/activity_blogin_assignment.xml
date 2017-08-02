@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ajayj.myapplication.BLoginAssignmentActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/green"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+
+    <ImageView
+        android:id="@+id/bkirana"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/kirana"
+        />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        >
+        <EditText
+            android:id="@+id/bnumberuser"
+            android:layout_width="300dp"
+            android:maxLength="10"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/mobile_icon"
+            android:inputType="number"
+            android:hint="Mobile Number"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp">
+
+        <EditText
+            android:id="@+id/bpassworduser"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/password"
+            android:drawableRight="@drawable/nonvisible"
+            android:hint="Passsword"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        />
+
+
+    <TextView
+
+        android:id="@+id/buserforgotpwdtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/red"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/forgotpwdimage"
+        android:text="@string/forgotpassword"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        />
+
+    <Button
+        android:id="@+id/busersigninbtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/button_icon"
+        android:text="Sign in"
+        />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:textColor="@color/cardview_dark_background"
+        android:text="Dont have an account?"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        />
+
+    <TextView
+        android:id="@+id/btextview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/signup"
+        android:textColor="@color/red"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/button123"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu" />
+
+    <include layout="@layout/content_blogin_assignment" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+
+
+
+
+</LinearLayout>
+</ScrollView>

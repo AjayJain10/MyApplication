@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ajayj.myapplication.PhoneActivity">
+
+
+    <Button
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="camera"
+        />
+
+    <Button
+        android:id="@+id/sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="send sms"
+        />
+
+    <Button
+        android:id="@+id/sms2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send a default message"
+        />
+
+
+    <Button
+        android:id="@+id/call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="make a call"
+        />
+
+    <Button
+        android:id="@+id/dialpad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dial a number"
+        />
+
+    <Button
+        android:id="@+id/internetbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search for the android in google"
+        />
+
+    <Button
+        android:id="@+id/photos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Read photos in phone"
+        />
+
+    <Button
+        android:id="@+id/contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Read phone contacts" />
+
+    <Button
+        android:id="@+id/contacts2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contacts 2"
+        />
+
+    <Button
+        android:id="@+id/webpage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="open youtube"
+        />
+
+    <Button
+        android:id="@+id/searchmap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="search map a location"
+        />
+
+    <Button
+        android:id="@+id/streetview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Street view"
+        />
+
+    <Button
+        android:id="@+id/musicplayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Music player"
+        />
+
+
+    <Button
+        android:id="@+id/musicplayer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="play a music"
+        />
+
+
+    <Button
+        android:id="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send mail"
+        />
+
+    <Button
+        android:id="@+id/settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="open settings"
+        />
+
+    <Button
+        android:id="@+id/lsettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="open language settings"
+        />
+
+
+
+
+    <Button
+        android:id="@+id/olso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Street view"
+        />
+</LinearLayout>
+</ScrollView>

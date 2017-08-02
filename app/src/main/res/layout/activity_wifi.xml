@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ajayj.myapplication.WifiActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/red"
+        android:text="Bluetooth Functionalities:"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/red"
+        android:text="-------------------------------------------"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    <Button
+        android:id="@+id/wifion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_icon"
+        android:backgroundTint="@color/red"
+        android:text="Wifi on"/>
+
+
+        <TextView
+            android:id="@+id/wifiontext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/wifioff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_icon"
+            android:backgroundTint="@color/red"
+            android:text="Turn off" />
+
+        <TextView
+            android:id="@+id/wifiofftext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

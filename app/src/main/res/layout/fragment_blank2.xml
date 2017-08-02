@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.ajayj.myapplication.fragments.BlankFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/flogintext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/red"
+        android:gravity="center"
+        android:background="@color/grey"
+        android:text="LOGIN to Proceed"
+        />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/fusertext2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Name"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true">
+        <EditText
+            android:id="@+id/fpasswordtext2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <CheckBox
+            android:id="@+id/frmndchecktext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="Remember Me"
+            />
+        <TextView
+            android:id="@+id/fforgotpwdtext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/red"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:text="@string/forgotpassword"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/floginbtn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="login 2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="New user...? click here"
+        />
+
+    <TextView
+        android:id="@+id/fsignuptext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/signup"
+        android:textColor="@color/red"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="150sp"
+        android:text="Copyrights Reserved @ MONSTER_AJAY reg."/>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment" />
+
+</LinearLayout>

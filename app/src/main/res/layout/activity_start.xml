@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/green"
+        android:orientation="vertical"
+        tools:context="com.example.ajayj.myapplication.StartActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="INDEX"
+            android:textColor="@color/red"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Linear Layout" />
+
+        <Button
+            android:id="@+id/relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Relative Layout" />
+
+        <Button
+            android:id="@+id/bk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Butter knife demo" />
+
+
+
+        <Button
+            android:id="@+id/demo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="Seekbar,Ratingbar,Proggressbar Activity" />
+
+
+
+        <Button
+            android:id="@+id/togglebtntxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toggle and switch demo" />
+
+        <Button
+            android:id="@+id/imagebtntxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Image btn,text-speech Demo Activity" />
+
+
+        <Button
+            android:id="@+id/radchkbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Radio and Check boxes" />
+
+
+        <Button
+            android:id="@+id/loginassign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login Assignment Activity" />
+
+
+        <Button
+            android:id="@+id/datetime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="Date and Time Assignment" />
+
+        <Button
+            android:id="@+id/recyleid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Recycler and Corousel View Demo" />
+
+        <Button
+            android:id="@+id/animationbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Animation Demo" />
+
+        <Button
+            android:id="@+id/fragmentbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fragment activity Demo" />
+
+        <Button
+            android:id="@+id/navdrawact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Navigation drawer activity Demo" />
+
+        <Button
+            android:id="@+id/mapsact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MAPS activity Demo" />
+
+
+        <Button
+            android:id="@+id/phonebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Phone operations" />
+
+        <Button
+            android:id="@+id/barcodebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Barcode activity"/>
+
+
+        <Button
+            android:id="@+id/web"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="webview activity"/>
+
+        <Button
+            android:id="@+id/bluetoothop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Bt,wifi,sinsor operations activity"/>
+
+        <Button
+            android:id="@+id/radloginsignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Radio button login and signup activity"/>
+
+        <Button
+            android:id="@+id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:text="tabs Demo activity"/>
+
+
+    </LinearLayout>
+</ScrollView>

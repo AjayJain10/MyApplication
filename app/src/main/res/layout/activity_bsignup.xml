@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ajayj.myapplication.BSignupActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/green"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        >
+        <EditText
+            android:id="@+id/busersignup"
+            android:layout_width="300dp"
+            android:maxLength="10"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/name"
+            android:inputType="text"
+            android:hint="Name"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        >
+
+        <EditText
+            android:id="@+id/bemailsignup"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/email"
+            android:hint="Email ID"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp">
+
+        <EditText
+            android:id="@+id/bpwdusersignup"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/password"
+            android:drawableRight="@drawable/nonvisible"
+            android:hint="Passsword"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp">
+
+        <EditText
+            android:id="@+id/bcnfrmpwdusersignup"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/confirmpwd"
+            android:drawableRight="@drawable/nonvisible"
+            android:hint="Passsword"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp">
+
+        <EditText
+            android:id="@+id/busermobnum"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/mobile_icon"
+            android:hint="Mobile Number"
+            android:inputType="number"
+            android:maxLength="10" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp">
+
+        <EditText
+            android:id="@+id/dob2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+            android:drawableTint="@color/green"
+            android:hint="Date of Birth"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+
+    <TextView
+        android:id="@+id/btextview3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="By clicking 'sign up' you agree to all statements in Terms of Service and Privacy Policy "
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <Button
+        android:id="@+id/busersignupbtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_icon"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp"
+        android:text="Sign up"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+    <TextView
+        android:id="@+id/btextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Already have an account?"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="25sp" />
+
+
+    <TextView
+        android:id="@+id/btextview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/signin"
+        android:textColor="@color/red"
+        android:textSize="20dp" />
+
+
+    <include layout="@layout/content_bsignup" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+</LinearLayout>

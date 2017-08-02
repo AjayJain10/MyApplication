@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ajayj.myapplication.MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/red"
+        android:gravity="center"
+        android:background="@color/grey"
+        android:text="SIGN UP please"
+        />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                >
+
+    <EditText
+        android:id="@+id/firstnametext"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:inputType="text"
+        android:layout_weight="0.5"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="0.5"
+                >
+
+            <EditText
+                android:id="@+id/lastnametext"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:hint="Last Name"
+                android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:id="@+id/usertext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Name"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            >
+
+        <EditText
+            android:id="@+id/codetext"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:hint="+91"
+            android:text="+91"
+            android:layout_weight="0.4"
+            />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            >
+
+        <EditText
+            android:id="@+id/mobiletext"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Mobile Number"
+            android:maxLength="10"
+            android:inputType="number"
+            android:layout_weight="0.6"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/emailtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email address"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_weight="0.2"
+                    android:text="DOB:"/>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/datetext"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:hint="DD/MM/YYYY"
+                    android:inputType="date"
+                    android:maxLength="10" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:textSize="20sp"
+                android:text="Gender:"/>
+
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/malerdbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Male"/>
+
+            <RadioButton
+                android:id="@+id/femalerdbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Female" />
+
+        </RadioGroup>
+        </LinearLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/addresstext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:inputType="textMultiLine"
+        />
+    </android.support.design.widget.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/questionspinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/securityanstext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Security Answer"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/passwordtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/passwordtext2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="confirm Password"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <CheckBox
+        android:id="@+id/checktext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Accept the terms and conditions"
+        />
+    <Button
+        android:id="@+id/registertext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Register"/>
+
+    <TextView
+        android:id="@+id/textaccept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have a account ?"
+        />
+
+    <TextView
+        android:id="@+id/logintext2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:text="@string/login"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10sp"
+        android:text="Copyrights Reserved @ MONSTER_AJAY reg."/>
+
+
+</LinearLayout>
+    </ScrollView>

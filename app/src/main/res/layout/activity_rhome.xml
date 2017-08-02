@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ajayj.myapplication.RhomeActivity">
+
+
+    <TextView
+        android:id="@+id/rtext3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:textSize="30sp"
+        android:text="You are successfully Registered...!!!" />
+
+    <TextView
+        android:id="@+id/rtext4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rtext3"
+        android:textSize="20sp"
+        android:text="you must login to continue"
+        />
+    <Button
+        android:id="@+id/rlogintxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Login"/>
+
+
+</RelativeLayout>

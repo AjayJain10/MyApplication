@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ajayj.myapplication.DemoActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/red"
+        android:background="@color/green"
+        android:gravity="center"
+        android:text="Rating Bar Example"/>
+
+    <RatingBar
+        android:id="@+id/ratingbar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1"
+        />
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/submitbtn"
+    android:text="submit"
+    android:typeface="monospace"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/red"
+        android:background="@color/green"
+        android:gravity="center"
+        android:text="Seeking Bar Example"/>
+
+    <SeekBar
+        android:id="@+id/simpleseekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="10"
+        android:progressBackgroundTint="@color/green"
+        android:progressTint="@color/red"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/red"
+        android:background="@color/green"
+        android:gravity="center"
+        android:text="Progress Bar Example"/>
+
+    <ProgressBar
+        android:id="@+id/Progress1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:progress="0"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:progressBackgroundTint="@color/green"
+        android:progressTint="@color/red"
+        />
+
+    <TextView
+        android:id="@+id/progressbartext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        />
+
+</LinearLayout>

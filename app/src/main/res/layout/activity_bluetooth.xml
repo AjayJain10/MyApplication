@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ajayj.myapplication.BluetoothActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/red"
+        android:text="Bluetooth Functionalities:"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/red"
+        android:text="-------------------------------------------"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/blueon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_icon"
+        android:text="Turn on"
+        android:backgroundTint="@color/red"
+        />
+
+    <TextView
+        android:id="@+id/blueontext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+
+</LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20sp"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/blueoff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_icon"
+                android:backgroundTint="@color/red"
+                android:text="Turn off" />
+
+            <TextView
+                android:id="@+id/blueofftext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bluevisibility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_icon"
+            android:backgroundTint="@color/red"
+            android:text="   turn visibility on   " />
+
+        <TextView
+            android:id="@+id/bluevisibilitytext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/bluedevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   show paired devices   "
+        android:backgroundTint="@color/red"
+        android:background="@drawable/button_icon"/>
+
+        <TextView
+            android:id="@+id/bluedevicestext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+
+
+        </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </ListView>
+
+</LinearLayout>
+    </ScrollView>
