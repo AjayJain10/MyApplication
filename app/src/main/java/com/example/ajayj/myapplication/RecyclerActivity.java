@@ -48,8 +48,9 @@ public class RecyclerActivity extends AppCompatActivity {
         GridLayoutManager gridlayoutmanager=new GridLayoutManager(this,2);
         layoutManager=new LinearLayoutManager(this);
 
-        layoutManager1=new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,true);
+        layoutManager1=new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,true);
 
+        //HORIZONTAL
 
         recycleview.setLayoutManager(gridlayoutmanager);
         recycleview.setLayoutManager(layoutManager);
